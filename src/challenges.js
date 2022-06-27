@@ -22,12 +22,13 @@ function calcArea(base, height) {
   return area;
 }
 calcArea(base, height);
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+const frase = 'foguete';
+function splitSentence(frase) {
+  fraseSplit = frase.split(' ');
+  return fraseSplit;
 }
-
+splitSentence(frase);
 // Desafio 4
 function concatName() {
   // seu código aqui
