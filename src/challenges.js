@@ -30,10 +30,15 @@ function splitSentence(frase) {
 }
 splitSentence(frase);
 // Desafio 4
-function concatName() {
-  // seu código aqui
+const nomes = ['captain', 'my', 'captain'];
+function concatName(nomes) {
+  primeiroElemento = nomes[0];
+  ultimoElemento = nomes[nomes.length - 1];
+  concatenacao = ultimoElemento + ', ' + primeiroElemento;
+  return concatenacao;
 }
-
+concatName(nomes);
+console.log(concatName(nomes));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
