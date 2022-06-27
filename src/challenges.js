@@ -13,10 +13,15 @@ function compareTrue(girafa, elefante, macaco) {
     return false;
   }
 }
+compareTrue();
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+const base = 51;
+const height = 1;
+function calcArea(base, height) {
+  area = (base * height) / 2;
+  return area;
 }
+calcArea(base, height);
 
 // Desafio 3
 function splitSentence() {
