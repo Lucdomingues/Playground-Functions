@@ -39,10 +39,14 @@ function concatName(nomes) {
 }
 concatName(nomes);
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+const wins = 1;
+const ties = 2;
+function footballPoints(wins, ties) {
+  vitoria = wins * 3;
+  totalDePontos = vitoria + ties;
+  return totalDePontos;
 }
-
+footballPoints(wins, ties);
 // Desafio 6
 function highestCount() {
   // seu código aqui
