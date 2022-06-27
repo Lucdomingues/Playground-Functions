@@ -38,7 +38,6 @@ function concatName(nomes) {
   return concatenacao;
 }
 concatName(nomes);
-console.log(concatName(nomes));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
