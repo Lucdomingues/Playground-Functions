@@ -48,14 +48,24 @@ function footballPoints(wins, ties) {
 }
 footballPoints(wins, ties);
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+const numeros = [9, 1, 2, 3, 9, 5, 7];
+function highestCount(numeros) {
+  let contador = 0;
+  maiorNumero = Math.max.apply(null, numeros);
+  for (index = 0; index < numeros.length; index += 1) {
+    if (maiorNumero == numeros[index]) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
-
+highestCount(numeros);
+console.log(highestCount(numeros));
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+const mouse = 0;
+const cat1 = 0;
+const cat2 = 0;
+function catAndMouse(mouse, cat1, cat2) {}
 
 // Desafio 8
 function fizzBuzz() {
