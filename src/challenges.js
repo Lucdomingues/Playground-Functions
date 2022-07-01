@@ -83,13 +83,24 @@ function fizzBuzz(array) {
   return arr;
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  frase = frase.replaceAll('a', 1);
+  frase = frase.replaceAll('e', 2);
+  frase = frase.replaceAll('i', 3);
+  frase = frase.replaceAll('o', 4);
+  frase = frase.replaceAll('u', 5);
+  return frase;
 }
-function decode() {
-  // seu código aqui
+function decode(codFrase) {
+  codFrase = codFrase.replaceAll(1, 'a');
+  codFrase = codFrase.replaceAll(2, 'e');
+  codFrase = codFrase.replaceAll(3, 'i');
+  codFrase = codFrase.replaceAll(4, 'o');
+  codFrase = codFrase.replaceAll(5, 'u');
+  return codFrase;
 }
-
+decode('h3 th2r2');
+console.log(decode('h3 th2r2'));
 // Desafio 10
 function techList() {
   // seu código aqui
