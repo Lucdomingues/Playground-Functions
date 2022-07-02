@@ -99,13 +99,23 @@ function decode(codFrase) {
   codFrase = codFrase.replaceAll(5, 'u');
   return codFrase;
 }
-decode('h3 th2r2');
-console.log(decode('h3 th2r2'));
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arr, pessoa) {
+  let arrObject = [];
+  let veri;
+  arr.sort();
+  if (!arr.length) {
+    veri = 'Vazio!';
+    return veri;
+  }
+  for (let index = 0; index < arr.length; index += 1) {
+    arrObject.push({
+      tech: arr[index],
+      name: pessoa,
+    });
+  }
+  return arrObject;
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
